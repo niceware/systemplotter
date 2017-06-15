@@ -74,7 +74,7 @@ void setVars() {
   stsiBox = new TextBox(eqUIpos.x+35, eqUIpos.y+40);
   stsiBox.value = Float.toString(stepSize);
   rCountBox = new TextBox(eqUIpos.x+24, eqUIpos.y+100);
-  name = new HyperLink("brianna reilly", "http://www.processing.org", 120, height-12);
+  name = new HyperLink("brianna reilly", "https://niceware.github.io/systemplotter/", 120, height-12);
 }
 
 void varStep() {
