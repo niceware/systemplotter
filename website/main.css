@@ -1,0 +1,17 @@
+body {
+  font-family: "Courier New", monospace;
+  background-color: #cda2dc;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #6B6DEC;
+}
+::-moz-selection {
+  background: #6B6DEC;
+}
+
+div {
+  margin: 10px;
+  padding: 10px;
+}
