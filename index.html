@@ -25,6 +25,7 @@
       <li> <strong>orange:</strong> remote point placing system; either place a number of random points or a single point to the typed location </li>
       <li> <strong>white:</strong> how a placed point looks on screen! notice its tail showing where it once was, and the fading tail of a now off-screen point </li>
     </ul>
+    <br><strong>Regarding the text boxes:</strong> they can be a little finicky. Pressing backspace, enter, or tab will erase the contents of the box. Due to temporary limitations to make the box otherwise a lot more usable, a user cannot enter the same character twice without moving onto a different box first. For example, to type "11", type the first 1, click outside the text box, and then enter the textbox again to type the second 1. Sorry for this inconvenience, but a workaround for this will be added in the future, likely prioritized.
     <br>
     <p id="prcs"><strong>Process:</strong></p>
     <p>Once the main goal of the project was established, the first thing to be figured out was which method of differential approximation was going to be used to calculate the points' positions. There are many methods that do this, with varying degrees of accuracy, performance speed, and coding difficulty. The simplest of these is Euler's method, and this was the one decided on in the end. While the least accurate of the many, it was the easiest to implement, and is accurate enough at a "step size" of <em class="var">.1</em> for any system of equations that can be achieved with this program so far. 
