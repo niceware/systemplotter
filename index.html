@@ -9,7 +9,7 @@
     <br>
     <img src="website/scr1.gif">
     <br>
-    <p>Yes, the title is rather self-explanatory. This is a program made in <a href="http://processing.org">Processing</a>, a language that takes otherwise plain Java and makes it easily visual. It was made by Brianna Reilly for a final project in Mr. Bonanomi's LADE (Linear Algebra and Differential Equations) class. 
+    <p>Yes, the title is rather self-explanatory. This is a program made in <a href="http://processing.org">Processing</a>, a language that takes otherwise plain Java and makes it easily visual. It was made by <em>Brianna Reilly</em> for a final project in Mr. Bonanomi's LADE (Linear Algebra and Differential Equations) class. 
       <br>Inspired by <a href="http://www.bluffton.edu/homepages/facstaff/nesterd/java/slopefields.html">this resource</a> written by Darryl Nester, this project was an experiment in learning how computers approximate and display systems of linear differential equations. This project aimed to be illustrative of how a source point reacted within a system, not just through a still line tracing its movement, but an animation of the movement itself through the field. It also aimed to be something pretty to look at, as the author of the program really saw a beauty in the structure of these fields, and wanted to share that with others.</p>
     <br>
     <p id="ctrl"><strong>Controls:</strong></p>
@@ -32,8 +32,12 @@
     <br><img class="eq" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6e625e1fa005b4ad257d839d3b8dd82c17bb0f70">
     <br><img class="eq" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/269f6c656eab53584639f205ecfe88b628af701a">
     <br>In words, this means that each time the method is stepped through, the new <em class="var">y</em> value is just the previous <em class="var">y</em> plus the solution of the differential equation of that <em class="var">y</em> for that step size. While maybe a bit complex when explained and not shown, once figured out it is by far the easiest way to get the next step value in a differential equation. Note, this explanation is just for one equation, but can easily be adapted to a system. Instead of one of the coordinate values being the step, both <em class="var">x</em> and <em class="var">y</em> have their own equations that take their and their partner's prior values into account, and the step size is only multiplied by the final solution to decrease how far the point gets before calculating again what the new values should be. This is why a smaller step size is important to accuracy. For example, for a step size of <em class="var">.1</em>, every step of <em class="var">1</em>, the equation is calculated <em class="var">10</em> times. This is also why it slows down so much.
-    
+    <br>There are many other methods that can do what Euler's method does. This category of methods are referred to in general as "Runge-Kutta" methods. The first few of these that were defined with this specific purpose were developed by C. Runge and M. W. Kutta, which is where the name comes from. Euler's method, however, was developed long before there was a category for it. The other Runge-Kutta methods are further advanced, more accurate and faster, but were not implemented into the main program on display on this page. Future builds of the program may add these more advanced methods, and let users choose between which method they want to use in the control menu.
+    <br>Speaking of future builds and current limitations, right now this program can only solve <em>linear</em> systems of differential equations. It cannot take in, for example, <em class="var">x' = sin(x) + y&#178;</em> as one of its equations. Solving for nonlinear systems adds a lot of complexity to the programming, and more time would need to be spent on that portion of the program in the future. Hopefully it will get added in time, as being able to create nonlinear system structures would really help to prove the secondary goal of this project, which is to show how pretty these systems can be once simulated. 
+    <br>Any further additions would be aesthetic in nature, such a choosing a color palette for the placed points, or choosing how long a user would want the tail to be. Extra options would just be for the sake of fine-tuning the simulation for the user, and are of less priority.
+    <br>Technically, based on what Processing can do, a 3D version of this program can also be made to illustrate systems of equations with three equations, where a three dimensional grid can be rotated within the space of the program, so points may be viewed from all angles. This would take a lot of work, though, and would not be the first improvement made to the program. Instead, maybe that would be developed as a side-project, made into a separate program so that this version can remain 2D.
     </p>
+    <img scr="website/scr3.gif">
     <br>
     <p id="link"><strong>Links:</strong></p>
     <p>For the finalized project, ready to be downloaded and run on Windows computers, <a href="https://github.com/niceware/systemplotter/tree/master/download">use this link</a> for the folder containing the exported program. Make sure you have a relatively up-to-date version of Java on your computer, or else the program cannot run properly.
@@ -45,7 +49,8 @@
       </ol>
       <br>For the source code of the project, <a href="https://github.com/niceware/systemplotter/tree/master/source">this link</a> leads to a folder containing the original Processing code files, ready to be viewed, downloaded, and used in anyone else's projects, whether scholarly or recreational. It would be appreciated if a mention of the author was added to any Processing class files that are directly copied and only minimally editted. However, there is no legal obligations or licenses to restrict users from taking snippets of code, or being inspired by this to make their own version.
     </p>
-    <br><br><br><br><br><br><br><br>
+    <img scr="website/scr4.gif">
+    <br><br><br><br><br><br><br><br><br>
   </div>
   <div class="nav">
     <p><a href="#top">top</a> ~ <a href="#ctrl">controls</a> ~ <a href="#prcs">process</a> ~ <a href="#link">links</a></p>
