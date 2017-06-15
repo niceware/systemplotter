@@ -19,6 +19,16 @@ div {
   width: 75%;
   text-align: center;
 }
+.nav {
+  background-color: #cda2dc;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
 
 p {}
 .title {
@@ -28,6 +38,9 @@ p {}
 
 ul {
   margin: 0% 10%;
+  text-align: left;
+}
+li {
   text-align: left;
 }
 
