@@ -2,6 +2,7 @@ body {
   font-family: "Courier New", monospace;
   background-color: #cda2dc;
   overflow-x: hidden;
+  
 }
 
 ::selection {
@@ -14,4 +15,19 @@ body {
 div {
   margin: 10px;
   padding: 10px;
+}
+.main {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+
+p {}
+.title {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+img {
+  border: 2px solid black;
 }
